@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:photo/src/entity/options.dart';
-import 'package:photo/src/provider/i18n_provider.dart';
+import '../../entity/options.dart';
+import '../../provider/i18n_provider.dart';
 import 'package:photo_manager/photo_manager.dart';
 
 class ChangeGalleryDialog extends StatefulWidget {

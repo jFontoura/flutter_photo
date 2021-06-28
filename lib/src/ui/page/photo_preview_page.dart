@@ -2,11 +2,11 @@ import 'dart:async';
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:photo/src/entity/options.dart';
-import 'package:photo/src/provider/asset_provider.dart';
-import 'package:photo/src/provider/config_provider.dart';
-import 'package:photo/src/provider/selected_provider.dart';
-import 'package:photo/src/ui/page/photo_main_page.dart';
+import '../../entity/options.dart';
+import '../../provider/asset_provider.dart';
+import '../../provider/config_provider.dart';
+import '../../provider/selected_provider.dart';
+import '../../ui/page/photo_main_page.dart';
 import 'package:photo_manager/photo_manager.dart';
 
 class PhotoPreviewPage extends StatefulWidget {

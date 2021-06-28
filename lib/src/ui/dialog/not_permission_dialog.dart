@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:photo/src/provider/i18n_provider.dart';
+import '../../provider/i18n_provider.dart';
 
 class NotPermissionDialog extends StatefulWidget {
   final I18NPermissionProvider provider;

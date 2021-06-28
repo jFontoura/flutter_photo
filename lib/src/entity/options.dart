@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:photo/src/delegate/badge_delegate.dart';
-import 'package:photo/src/delegate/checkbox_builder_delegate.dart';
-import 'package:photo/src/delegate/loading_delegate.dart';
-import 'package:photo/src/delegate/sort_delegate.dart';
+import '../delegate/badge_delegate.dart';
+import '../delegate/checkbox_builder_delegate.dart';
+import '../delegate/loading_delegate.dart';
+import '../delegate/sort_delegate.dart';
 
 class Options {
   final int rowCount;

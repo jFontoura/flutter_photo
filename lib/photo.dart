@@ -3,25 +3,25 @@ library photo;
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:photo/src/engine/lru_cache.dart';
+import './src/engine/lru_cache.dart';
 
 import 'package:photo_manager/photo_manager.dart';
 
-import 'package:photo/src/delegate/badge_delegate.dart';
-import 'package:photo/src/delegate/checkbox_builder_delegate.dart';
-import 'package:photo/src/delegate/loading_delegate.dart';
-import 'package:photo/src/delegate/sort_delegate.dart';
-import 'package:photo/src/entity/options.dart';
-import 'package:photo/src/provider/i18n_provider.dart';
-import 'package:photo/src/ui/dialog/not_permission_dialog.dart';
-import 'package:photo/src/ui/photo_app.dart';
-export 'package:photo/src/delegate/checkbox_builder_delegate.dart';
-export 'package:photo/src/delegate/loading_delegate.dart';
-export 'package:photo/src/delegate/sort_delegate.dart';
-export 'package:photo/src/provider/i18n_provider.dart'
-    show I18NCustomProvider, I18nProvider, CNProvider, ENProvider, PTProvider;
-export 'package:photo/src/entity/options.dart' show PickType;
-export 'package:photo/src/delegate/badge_delegate.dart';
+import './src/delegate/badge_delegate.dart';
+
+import './src/delegate/checkbox_builder_delegate.dart';
+import './src/delegate/loading_delegate.dart';
+import './src/delegate/sort_delegate.dart';
+import './src/entity/options.dart';
+import './src/provider/i18n_provider.dart';
+import './src/ui/dialog/not_permission_dialog.dart';
+import './src/ui/photo_app.dart';
+export './src/delegate/loading_delegate.dart';
+export './src/delegate/sort_delegate.dart';
+export './src/provider/i18n_provider.dart'
+    show I18NCustomProvider, I18nProvider, PTProvider, CNProvider, DEProvider, ENProvider,I18NPermissionProvider;
+export './src/entity/options.dart' show PickType;
+export './src/delegate/badge_delegate.dart';
 
 class PhotoPicker {
   static PhotoPicker _instance;
@@ -110,6 +110,7 @@ class PhotoPicker {
     loadingDelegate ??= DefaultLoadingDelegate();
 
     var options = Options(
+
       rowCount: rowCount,
       dividerColor: dividerColor,
       maxSelected: maxSelected,

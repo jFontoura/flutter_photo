@@ -1,5 +1,5 @@
-import 'package:photo/src/entity/options.dart';
-import 'package:photo/src/provider/selected_provider.dart';
+import '../entity/options.dart';
+import '../provider/selected_provider.dart';
 
 abstract class I18nProvider {
   const I18nProvider._();
@@ -197,7 +197,7 @@ class PTProvider extends I18nProvider {
 
   @override
   String getSelectedOptionsText(Options options) {
-    return "Selecionado";
+    return "";
   }
 
   @override
