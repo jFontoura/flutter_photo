@@ -17,7 +17,7 @@ abstract class I18nProvider {
   String getAllGalleryText(Options options);
 
   String loadingText() {
-    return "Loading...";
+    return "Carregando...";
   }
 
   I18NPermissionProvider getNotPermissionText(Options options);
@@ -28,8 +28,10 @@ abstract class I18nProvider {
 
   static const I18nProvider german = DEProvider();
 
+  static const I18nProvider portuguese = PTProvider();
+
   String getNoSelectedText(Options options) {
-    return 'Select Folder';
+    return 'Selecione o Álbum';
   }
 }
 
@@ -172,6 +174,48 @@ class DEProvider extends I18nProvider {
         cancelText: "Abbrechen",
         sureText: "Erlauben",
         titleText: "Kein Zugriff auf den Ordner");
+  }
+}
+
+class PTProvider extends I18nProvider {
+  const PTProvider() : super._();
+
+  @override
+  String getTitleText(Options options) {
+    return "";
+  }
+
+  @override
+  String getPreviewText(Options options, SelectedProvider selectedProvider) {
+    return "Visualizar (${selectedProvider.selectedCount})";
+  }
+
+  @override
+  String getSureText(Options options, int currentCount) {
+    return "Salvar ($currentCount/${options.maxSelected})";
+  }
+
+  @override
+  String getSelectedOptionsText(Options options) {
+    return "Selecionado";
+  }
+
+  @override
+  String getMaxTipText(Options options) {
+    return "Selecione no máximo ${options.maxSelected} Fotos";
+  }
+
+  @override
+  String getAllGalleryText(Options options) {
+    return "Recente";
+  }
+
+  @override
+  I18NPermissionProvider getNotPermissionText(Options options) {
+    return I18NPermissionProvider(
+        cancelText: "Cancelar",
+        sureText: "Permitir",
+        titleText: "Sem permissão para acessar a galeria");
   }
 }
 

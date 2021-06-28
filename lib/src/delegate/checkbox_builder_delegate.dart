@@ -42,6 +42,7 @@ class DefaultCheckBoxBuilderDelegate extends CheckBoxBuilderDelegate {
         title: Text(
           i18nProvider.getSelectedOptionsText(options),
           textAlign: TextAlign.end,
+          softWrap: false,
           style: TextStyle(color: options.textColor),
         ),
       ),

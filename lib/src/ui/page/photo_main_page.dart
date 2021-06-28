@@ -68,7 +68,7 @@ class _PhotoMainPageState extends State<PhotoMainPage>
     } else if (currentPath == null) {
       return i18nProvider.getNoSelectedText(options);
     }
-    return currentPath?.name ?? "Select Folder";
+    return currentPath?.name ?? "Selecione o Álbum";
   }
 
   GlobalKey scaffoldKey;

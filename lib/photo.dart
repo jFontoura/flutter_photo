@@ -19,7 +19,7 @@ export 'package:photo/src/delegate/checkbox_builder_delegate.dart';
 export 'package:photo/src/delegate/loading_delegate.dart';
 export 'package:photo/src/delegate/sort_delegate.dart';
 export 'package:photo/src/provider/i18n_provider.dart'
-    show I18NCustomProvider, I18nProvider, CNProvider, ENProvider;
+    show I18NCustomProvider, I18nProvider, CNProvider, ENProvider, PTProvider;
 export 'package:photo/src/entity/options.dart' show PickType;
 export 'package:photo/src/delegate/badge_delegate.dart';
 
@@ -86,7 +86,7 @@ class PhotoPicker {
     Color textColor,
     Color disableColor,
     int thumbSize = 64,
-    I18nProvider provider = I18nProvider.chinese,
+    I18nProvider provider = I18nProvider.portuguese,
     SortDelegate sortDelegate,
     CheckBoxBuilderDelegate checkBoxBuilderDelegate,
     LoadingDelegate loadingDelegate,
